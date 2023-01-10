@@ -3,18 +3,13 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.title-search {
-
-
-}
-
 .navbar {
   background-color: darkturquoise;
   height: 7rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-around;
+  justify-content:space-evenly;
 }
 
 .navbar * img {
