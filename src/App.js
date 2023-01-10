@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import CreateCards from './components/CreateCards';
+import Cards from './components/Cards'
 
 function App() {
   return (
     <div className="App">
-          {Navbar()}
-          {CreateCards()}
+      {Navbar()}
+      <div className="container">{Cards()}</div>
     </div>
   )
 }

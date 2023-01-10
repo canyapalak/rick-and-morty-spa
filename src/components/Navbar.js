@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <div className='navbar'>
         <div><img src={Pickle1} alt="Pickle Rick 1"/></div>
-        <div class = "title-search">
-            <h2>Rick and Morty Character Cards</h2>
+        <div className = "title-search">
+            <h2>RICK AND MORTY CARDS</h2>
             <input
               id="search-box"
               type="search"
