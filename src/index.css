@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title-search {
+
+
+}
+
+.navbar {
+  background-color: darkturquoise;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.navbar * img {
+  width: 6rem;
+}
+
+h2 {
+  color:black;
+  margin-top: 0em;
+}
+
+
+#search-box {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid black;
+  width: 15rem;
+  height: 2.2rem;
+  font-size: large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
