@@ -2,17 +2,20 @@ import {useState, useEffect} from "react";
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
+import Modals from "./Modals";
 
 export default function Cards() {
-    
+
 const [data, setData] = useState([]);
 const url = "https://rickandmortyapi.com/api/character"
 
   useEffect(() =>{
   fetch(url)
     .then(response => response.json())
-    .then(result => setData(result.results));
+    .then(result => {
+      setData(result.results)
+      console.log('data :>> ', data);
+    });
     
     }, []);
 
@@ -24,30 +27,28 @@ const url = "https://rickandmortyapi.com/api/character"
   
     return(
         <>
-        {data && data.map((i) => {
+        {data && data.map((char) => {
+          <Modals character = {char} />
 
-
-            return (
-              <div key={i.id} className="flip-card">
+          return (
+              <Card key={char.id} className="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <Card style={cardStyle}>
-                    <Card.Img variant="top" src={i.image} />
+                    <Card.Img variant="top" src={char.image} />
                     </Card>
                   </div>
                 
                   <div class="flip-card-back">
                     <Card style={cardStyle} id="backcard">
-                    <Card.Title>{i.name}</Card.Title>
-                    <Button variant="light">MORE INFO</Button>
+                    <Card.Title>{char.name}</Card.Title>
+                    <Button variant="light" onClick={Modals}>MORE INFO</Button>
                     </Card>
                   </div>
-                </div>
               </div>
+              </Card>
             )
-    
     })} 
           </>
           );
 }; 
-
