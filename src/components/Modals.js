@@ -4,30 +4,35 @@ import Modal from 'react-bootstrap/Modal';
 
 
 
-export default function Modals(character) {
-    const [show, setShow] = useState(false);
+export default function Modals({ data }) {
+  
+  const [show, setShow] = useState(false);
 
-    const handleShow = () => setShow(true);
-    
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
   return (
+  <>
+
+      {data && data.map((char) => {
+
+        return (
           <div
-      className="modal show"
-      style={{ display: 'block', position: 'initial' }}>
-              <Modal.Dialog  id="modal-card">
-              <Modal.Header>
-                  <Modal.Title>{character.name} Character Name</Modal.Title>
-              </Modal.Header>
-        <Modal.Body>
-          <p>Here comes the character image.</p>
-          <p>Here comes the character species.</p>
-          <p>Here comes the character status.</p>
-        </Modal.Body>
-              <Modal.Footer>
-                {/* <Button variant="secondary" onClick={handleClose}> */}
-                  <Button variant="danger">Close</Button>
-                {/* </Button> */}
-              </Modal.Footer>
-        </Modal.Dialog>
-        </div>
-          )
+            className="modal show"
+            style={{ display: 'block', position: 'initial' }}>
+            <Modal.Dialog key={char.id} className="modal-card">
+              <Modal.Body className="modal-body">
+                <p id="modalCharName">{char.name}</p>
+                <img src={char.image} alt="Character Name" />
+                <p id="modalSpecies">Species: {char.species}</p>
+                <p>Status: {char.status}</p>
+                <Button variant="danger" id="closeButton" onClick={handleClose}>CLOSE</Button>
+              </Modal.Body>
+            </Modal.Dialog>
+          </div>
+        )
+      })}
+    </>
+  )
+
 }

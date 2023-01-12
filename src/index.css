@@ -100,7 +100,44 @@ h2 {
     background-color: darkturquoise;
 }
 
+/* modals */
+.modal-card {
+  width:22rem;
+  height: 34rem;
+  color: black;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-#modal-card {
-  color: indigo;
+.modal-body {
+  border: 2px solid rgb(6, 75, 6);
+  border-radius: 10px;
+  background-color: rgb(232, 245, 245);
+}
+
+.modal-card img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 50%;
+  min-height: 70%
+}
+
+.modal-card p {
+  justify-content: center;
+  display:flex;
+}
+
+#modalSpecies {
+  margin-top: 0.5rem;
+}
+
+#modalCharName {
+  font-size: x-large;
+}
+
+#closeButton {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
