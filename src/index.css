@@ -60,9 +60,9 @@ h2 {
 .flip-card {
   margin: 1rem;
   background-color: transparent;
-    width: 13rem;
-    height: 13rem;
-    perspective: 1000px;
+  width: 13rem;
+  height: 13rem;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -94,38 +94,51 @@ h2 {
 }
 
 #backcard {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: darkturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: darkturquoise;
 }
 
 /* modals */
-.modal-card {
-  width:22rem;
-  height: 34rem;
-  color: black;
+.modal-content {
+  margin-top: 11rem;
+  margin-bottom: auto;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto;;
+  width: 0px;
+  height: 0px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-body {
-  border: 2px solid rgb(6, 75, 6);
-  border-radius: 10px;
-  background-color: rgb(232, 245, 245);
+.modal-card {
+
+  color: black;
+  margin-top: 11rem;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .modal-card img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  min-width: 50%;
-  min-height: 70%
+  border: 1px solid rgb(6, 75, 6);
+  border-radius: 10px;
 }
 
 .modal-card p {
   justify-content: center;
   display:flex;
+}
+
+.modal-body {
+  border: 3px solid rgb(6, 75, 6);
+  border-radius: 10px;
+  background-color: darkturquoise;
 }
 
 #modalSpecies {

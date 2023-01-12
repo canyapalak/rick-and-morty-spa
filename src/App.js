@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Cards from './components/Cards'
-import Modals from './components/Modals';
 
 function App() {
 
@@ -30,12 +29,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Cards />
-      <Modals />
       <Cards data={data} />
-      <Modals data={data}/>
     </div>
   )
 }
-
 export default App;
