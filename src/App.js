@@ -6,7 +6,8 @@ import Cards from './components/Cards'
 function App() {
 
       const [data, setData] = useState([]);
-      const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
+    const [filteredChar, setFilteredChar] = useState(null);
 
 
   useEffect(() => { 
@@ -18,7 +19,7 @@ function App() {
         const data = result.results;
         console.log('data :>> ', data);
       } catch (error) {
-        console.log("Catch: ", error);
+        console.log("Catch:>> ", error);
         setError(error)
       }
     }
@@ -28,8 +29,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar data={data} />
-      <Cards data={data} />
+      <Navbar data={data} setFilteredChar={setFilteredChar} filteredChar={filteredChar}/>
+      <Cards data={data} filteredChar={filteredChar} />
     </div>
   )
 }
