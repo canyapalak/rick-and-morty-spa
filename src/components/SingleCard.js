@@ -34,7 +34,7 @@ function SingleCard({ char }) {
 
             <div className="flip-card-back">
               <Card style={cardStyle} id="backcard">
-                <Card.Title>{char.name}</Card.Title>
+                <Card.Title id="char-name">{char.name}</Card.Title>
                 <Button variant="light" onClick={() => handleShow()}>MORE INFO</Button>
               </Card>
             </div>
