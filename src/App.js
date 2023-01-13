@@ -6,8 +6,8 @@ import Cards from './components/Cards'
 function App() {
 
       const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
-    const [filteredChar, setFilteredChar] = useState(null);
+      const [error, setError] = useState(null);
+      const [filteredChar, setFilteredChar] = useState(null);
 
 
   useEffect(() => { 

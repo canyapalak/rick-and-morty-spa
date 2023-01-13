@@ -155,3 +155,8 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
