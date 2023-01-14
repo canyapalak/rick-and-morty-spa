@@ -4,14 +4,16 @@ import Pagination from 'react-bootstrap/Pagination';
 function createPagination({page, setPage, maxpages, setMaxpages}) {
 
     const decrementPage = () => {
-        //console.log(page)
+        //console.log(page)      
       setPage(page - 1);
-     
+      
     }
  
     const incrementPage = () => {
         //console.log(page)
+      // disable if more than max
       setPage(page + 1);
+      
       
     }
  
