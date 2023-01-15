@@ -3,7 +3,7 @@ import SingleCard from "./SingleCard";
 import { useState } from "react";
 import Pagination from './Pagination';
 
-function Cards({ data, filteredChar }) {
+function Cards({ data, setData, filteredChar }) {
 
   const [page, setPage] = useState(1);
   const [maxpages, setMaxpages] = useState("");
@@ -14,11 +14,12 @@ function Cards({ data, filteredChar }) {
       const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`);
       const result = await response.json();
       setMaxpages(result.info.pages)
+      setData(result.results)
+      
     } catch (error) {
       console.log(error)
       
     } 
-    
   };
 
   return (

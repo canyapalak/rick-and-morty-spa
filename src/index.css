@@ -156,7 +156,28 @@ h2 {
   margin-left: auto;
 }
 
+/* page buttons */
+
 .pagination {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  align-items: stretch;
+}
+
+#back-arrow {
+  margin-right: 4rem;
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+  background-color: darkturquoise;
+  border: 1px solid rgb(6, 75, 6);
+}
+
+#next-arrow {
+  margin-left: 4rem;
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+  background-color: darkturquoise;
+  border: 1px solid rgb(6, 75, 6);
 }

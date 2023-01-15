@@ -29,8 +29,8 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar data={data} setFilteredChar={setFilteredChar} filteredChar={filteredChar}/>
-      <Cards data={data} filteredChar={filteredChar} />
+      <Navbar data={data}  setFilteredChar={setFilteredChar} filteredChar={filteredChar}/>
+      <Cards data={data} setData={setData} filteredChar={filteredChar} />
     </div>
   )
 }
