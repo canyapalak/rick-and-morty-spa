@@ -6,7 +6,7 @@ import Cards from './components/Cards'
 function App() {
 
       const [data, setData] = useState([]);
-      const [errors, setErrors] = useState(null);
+      const [error, setError] = useState(null);
       const [filteredChar, setFilteredChar] = useState(null);
 
 
@@ -20,12 +20,12 @@ function App() {
         console.log('data :>> ', data);
       } catch (error) {
         console.log("Catch:>> ", error);
-        setErrors(errors)
+        setError(error)
       }
     }
 
     fetchTryCatch();
-  }, []);
+  }, [error]);
 
   return (
     <div className="App">
