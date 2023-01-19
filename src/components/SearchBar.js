@@ -1,6 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import SingleCard from "./SingleCard";
 
 const SearchBar = ({ setFilteredChar, filteredChar, data }) => {
   // const [searchChar, setSearchChar] = useState('');
