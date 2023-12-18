@@ -162,24 +162,30 @@ h2 {
 
 .pagination {
   display: flex;
-  justify-content:center;
-  align-items: stretch;
+  justify-content: space-around;
+  gap: 5rem;
 }
 
-#back-arrow {
-  margin-right: 4rem;
-  font-weight: bolder;
-  font-size: larger;
-  color: black;
-  background-color: darkturquoise;
-  border: 1px solid rgb(6, 75, 6);
-}
-
+#back-arrow,
 #next-arrow {
-  margin-left: 0rem;
   font-weight: bolder;
   font-size: larger;
   color: black;
   background-color: darkturquoise;
   border: 1px solid rgb(6, 75, 6);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#back-arrow:hover,
+#next-arrow:hover {
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+  background-color:cyan;
+  border: 1px solid rgb(6, 75, 6);
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
