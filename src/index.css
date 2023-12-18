@@ -8,9 +8,11 @@ body {
 
 /* for mobile phones */
 @media only screen and (max-width: 600px) {
-  #pickle-2  {
+  #pickle-2,
+  #pickle-1  {
     display: none;
   }
+
 }
 
 /* navigation bar */
@@ -174,7 +176,7 @@ h2 {
 }
 
 #next-arrow {
-  margin-left: 4rem;
+  margin-left: 0rem;
   font-weight: bolder;
   font-size: larger;
   color: black;
