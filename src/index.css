@@ -180,12 +180,5 @@ h2 {
 
 #back-arrow:hover,
 #next-arrow:hover {
-  font-weight: bolder;
-  font-size: larger;
-  color: black;
   background-color:cyan;
-  border: 1px solid rgb(6, 75, 6);
-  height: 2rem;
-  display: flex;
-  align-items: center;
 }
